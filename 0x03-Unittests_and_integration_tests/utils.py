@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Generic utilities for github org client.
 """
@@ -74,12 +73,3 @@ def memoize(fn: Callable) -> Callable:
         return getattr(self, attr_name)
 
     return property(memoized)
-
-
-
-# print(access_nested_map({"a": 1}, ("a",)))
-# print(access_nested_map({"a": {"b": 2}}, path=("a",)))
-# print(access_nested_map({"a": {"b": 2}}, path=("a", "b")))
-
-#print(access_nested_map({}, path=("a",)))
-# print(access_nested_map({"a": 1}, path=("a", "b")))
